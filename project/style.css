@@ -1,0 +1,150 @@
+
+
+body{
+    background-color:  hsl(233, 47%, 7%);
+    Font-size: 15px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-left: 30vh;
+    
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    border-radius:  0.5em 0 0 0.5em  ;
+    height: 50vh;
+   width: 60vh;
+   align-items: center;
+   justify-content: center;
+    background-color: hsl(244, 38%, 16%);
+    
+}
+#right{
+flex: 1;
+align-items: center;
+justify-content: center;
+}
+#right #img{
+    
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-color:  hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+	background-size: cover;
+    border-radius: 0 0.5em  0.5em  0;
+	height: 50vh;
+
+}
+#cont{
+padding: 15em 5em 15em 5em; 
+
+}
+#foot-text{
+    display: flex;
+    
+}
+.h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 23px;
+}
+.col{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.657);
+    padding-top: 7em;
+    line-height: 24px;
+    flex: 1;
+}
+#main-text h1{
+    line-height: 1.5em;
+}
+ p{ color:rgba(255, 255, 255, 0.712);
+     line-height: 2em;
+ }
+ span{
+     color: hsl(277, 64%, 61%);;
+ }
+@media (max-width: 768px) 
+{
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #wrapper{
+        
+        padding: 0;
+        margin: 8vh 2vh 2vh 2vh;
+        width: 45vh;
+        height: 90vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+    #left{height: 70vh;
+        
+        border-radius: 0 0em 0.5em 0.5em;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+width: 100%;
+padding: 0;
+margin: 0;
+    }
+    #right{ 
+        justify-content: center;
+        flex: 1;
+        padding: 0;
+        margin-top: 7em;
+    }
+
+        #right #img{
+            padding: 0;
+            margin: 0;
+            background-image: url(./images/image-header-mobile.jpg);
+            background-repeat: no-repeat;
+            background-color:  hsl(277, 64%, 61%);
+            background-blend-mode: multiply;
+            background-size: cover;
+            border-radius: 0.5em 0.5em 0em  0em;
+            height: 30vh;
+            width: 45vh;
+        }
+        #cont{
+            padding: 15em 5em 15em 5em; 
+            
+            }
+            #foot-text{
+                
+                display: flex;
+                flex-direction: column;
+            }
+            .col{
+                text-align: center;
+                padding: 2em;
+            }
+            #cont{
+                padding-top: 12em;
+                padding-left: 4em;
+                padding-right: 4em;
+                
+            }
+            #cont h1 {
+                text-align: center;
+                
+            }
+            #cont p{
+                text-align: center;
+            }
+            
+    }
